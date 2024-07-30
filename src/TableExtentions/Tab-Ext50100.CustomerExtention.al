@@ -1,0 +1,77 @@
+tableextension 50106 CustomerExtention extends Customer
+{
+    fields
+    {
+        field(50106; FirstName; Text[30])
+        {
+            Caption = 'FirstName';
+            DataClassification = ToBeClassified;
+        }
+        field(50107; OtherName; Text[30])
+        {
+            Caption = 'OtherName';
+            DataClassification = ToBeClassified;
+        }
+        field(50108; Surname; Text[30])
+        {
+            Caption = 'Surname';
+            DataClassification = ToBeClassified;
+        }
+        field(50109; FullName; Text[30])
+        {
+            Caption = 'FullName';
+            DataClassification = ToBeClassified;
+        }
+        field(50110; Birthdate; Date)
+        {
+            Caption = 'Birthdate';
+            DataClassification = ToBeClassified;
+        }
+        field(50111; Course; Code[20])
+        {
+            Caption = 'Course';
+            DataClassification = ToBeClassified;
+        }
+        field(50112; AdmissionPeriod; Code[20])
+        {
+            Caption = 'AdmissionPeriod';
+            DataClassification = ToBeClassified;
+        }
+        field(50113; CustomerType; Enum "ABS Blob Access Tier")
+        {
+            Caption = 'CustomerType';
+            DataClassification = ToBeClassified;
+        }
+        field(50114; Gender; Enum "ABS Blob Access Tier")
+        {
+            Caption = 'Gender';
+            DataClassification = ToBeClassified;
+        }
+        field(50115; KCSEGrade; Code[20])
+        {
+            Caption = 'KCSEGrade';
+            DataClassification = ToBeClassified;
+        }
+        field(50116; idNo; Code[20])
+        {
+            Caption = 'idNo';
+            DataClassification = ToBeClassified;
+        }
+        field(50117; BirthCertificateNumber; Code[20])
+        {
+            Caption = 'BirthCertificateNumber';
+            DataClassification = ToBeClassified;
+        }
+        field(50118; AdmissionNo; Code[20])
+        {
+            Caption = 'AdmissionNo';
+            DataClassification = ToBeClassified;
+        }
+        field(50119; MobileNo; Code[20])
+        {
+            Caption = 'MobileNo';
+            DataClassification = ToBeClassified;
+        }
+        
+    }
+}
