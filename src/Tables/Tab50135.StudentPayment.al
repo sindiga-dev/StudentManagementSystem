@@ -12,18 +12,22 @@ table 50135 StudentPayment
         field(2; StudentNo; Code[20])
         {
             Caption = 'StudentNo';
+            TableRelation = Customer;
         }
         field(3; Course; Code[20])
         {
             Caption = 'Course';
+            TableRelation = Course;
         }
         field(4; Year; Code[20])
         {
             Caption = 'Year';
+            TableRelation = CalenderYear;
         }
         field(5; Semester; Code[20])
         {
             Caption = 'Semester';
+            TableRelation = Semester;
         }
         field(6; DocumentDate; Date)
         {

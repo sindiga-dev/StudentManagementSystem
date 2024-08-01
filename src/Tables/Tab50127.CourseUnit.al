@@ -23,6 +23,7 @@ table 50127 CourseUnit
         field(4; Unit; Code[20])
         {
             Caption = 'Unit';
+            TableRelation = Unit;
         }
         field(5; Description; Text[20])
         {

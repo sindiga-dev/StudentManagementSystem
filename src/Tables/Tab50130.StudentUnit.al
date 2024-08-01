@@ -12,14 +12,17 @@ table 50130 StudentUnit
         field(2; Course; Code[20])
         {
             Caption = 'Course';
+            TableRelation = Course;
         }
         field(3; Year; Code[20])
         {
             Caption = 'Year';
+            TableRelation = CalenderYear;
         }
         field(4; Semester; Code[20])
         {
             Caption = 'Semester';
+            TableRelation = Semester;
         }
         field(5; Unit; Date)
         {

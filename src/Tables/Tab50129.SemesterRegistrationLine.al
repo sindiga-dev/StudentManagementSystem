@@ -8,6 +8,7 @@ table 50129 SemesterRegistrationLine
         field(1; DocumentNo; Code[20])
         {
             Caption = 'DocumentNo';
+            TableRelation = SemesterRegistration;
         }
         field(2; LineNumber; Integer)
         {
@@ -16,6 +17,7 @@ table 50129 SemesterRegistrationLine
         field(3; Unit; Code[20])
         {
             Caption = 'Unit';
+            TableRelation = Unit;
         }
         field(4; Description; Text[100])
         {
