@@ -8,10 +8,12 @@ table 50126 YearSemester
         field(1; Year; Code[20])
         {
             Caption = 'Year';
+            TableRelation = "CalenderYear";
         }
         field(2; Semester; Code[20])
         {
             Caption = 'Semester';
+            TableRelation = Semester;
         }
         field(3; Description; Text[20])
         {
@@ -20,7 +22,7 @@ table 50126 YearSemester
     }
     keys
     {
-        key(PK; Year)
+        key(PK; Year, Semester)
         {
             Clustered = true;
         }

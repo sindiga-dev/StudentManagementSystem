@@ -16,6 +16,7 @@ table 50120 Course
         field(3; MinimumGrade; Code[20])
         {
             Caption = 'MinimumGrade';
+            TableRelation = "Grade";
         }
         field(4; NoOfYears; Integer)
         {

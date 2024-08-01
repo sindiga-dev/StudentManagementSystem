@@ -28,6 +28,7 @@ table 50122 AdmissionPeriod
         field(6; AcademicYear; Code[20])
         {
             Caption = 'AcademicYear';
+            TableRelation = "CalenderYear";
         }
     }
     keys

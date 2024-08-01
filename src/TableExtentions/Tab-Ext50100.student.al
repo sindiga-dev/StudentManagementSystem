@@ -1,4 +1,4 @@
-tableextension 50106 CustomerExtention extends Customer
+tableextension 50106 student extends Customer
 {
     fields
     {
@@ -31,11 +31,13 @@ tableextension 50106 CustomerExtention extends Customer
         {
             Caption = 'Course';
             DataClassification = ToBeClassified;
+            TableRelation = "Course";
         }
         field(50112; AdmissionPeriod; Code[20])
         {
             Caption = 'AdmissionPeriod';
             DataClassification = ToBeClassified;
+            TableRelation = "AdmissionPeriod";
         }
         field(50113; CustomerType; Enum "ABS Blob Access Tier")
         {
@@ -66,6 +68,7 @@ tableextension 50106 CustomerExtention extends Customer
         {
             Caption = 'AdmissionNo';
             DataClassification = ToBeClassified;
+            TableRelation = "No. Series";
         }
         field(50119; MobileNo; Code[20])
         {
