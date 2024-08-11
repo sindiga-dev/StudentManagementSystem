@@ -6,18 +6,33 @@ tableextension 50106 student extends Customer
         {
             Caption = 'FirstName';
             DataClassification = ToBeClassified;
+
+            trigger OnValidate()
+            begin
+                UpdateFullName();
+            end;
         }
         field(50107; OtherName; Text[30])
         {
             Caption = 'OtherName';
             DataClassification = ToBeClassified;
+
+            // trigger OnValidate()
+            // begin
+            //     UpdateFullName();
+            // end;  
         }
         field(50108; Surname; Text[30])
         {
             Caption = 'Surname';
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            begin
+                // Name:=FirstName + OtherName "" + Surname 
+                UpdateFullName();
+            end;
         }
-        field(50109; FullName; Text[30])
+        field(50109; FullName; Text[100]) // Adjusted length to accommodate the full name
         {
             Caption = 'FullName';
             DataClassification = ToBeClassified;
@@ -75,6 +90,10 @@ tableextension 50106 student extends Customer
             Caption = 'MobileNo';
             DataClassification = ToBeClassified;
         }
-        
     }
+
+    procedure UpdateFullName()
+    begin
+        FullName := FirstName + ' ' + OtherName;
+    end;
 }

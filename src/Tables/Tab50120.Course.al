@@ -8,10 +8,12 @@ table 50120 Course
         field(1; "Code"; Code[20])
         {
             Caption = 'Code';
+            DataClassification = ToBeClassified;
         }
         field(2; Description; Text[20])
         {
             Caption = 'Description';
+            DataClassification = ToBeClassified;
         }
         field(3; MinimumGrade; Code[20])
         {

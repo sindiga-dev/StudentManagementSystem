@@ -43,7 +43,7 @@ page 50140 CustomerList
                 {
                     ToolTip = 'Specifies the value of the KCSEGrade field.', Comment = '%';
                 }
-                field(Id; Rec.Id)
+                field(Id; Rec.Id) 
                 {
                     ToolTip = 'Specifies the value of the Id field.', Comment = '%';
                 }
