@@ -9,7 +9,7 @@ page 50146 SemesterRegistrationCard
     {
         area(Content)
         {
-            group(General)
+            group(General)  
             {
                 Caption = 'General';
                 
