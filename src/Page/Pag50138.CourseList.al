@@ -21,7 +21,7 @@ page 50137 CourseList
                     ToolTip = 'Specifies the value of the Description field.', Comment = '%';
                 }
                 field(MinimumGrade; Rec.MinimumGrade)
-                {
+                { 
                     ToolTip = 'Specifies the value of the MinimumGrade field.', Comment = '%';
                 }
                 field(NoOfYears; Rec.NoOfYears)
