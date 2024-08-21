@@ -4,6 +4,7 @@ page 50139 CourseCard
     Caption = 'CourseCard';
     PageType = Card;
     SourceTable = Course;
+    UsageCategory = Administration;
     
     layout
     {

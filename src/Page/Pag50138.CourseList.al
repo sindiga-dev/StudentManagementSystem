@@ -4,7 +4,7 @@ page 50137 CourseList
     Caption = 'CourseList';
     PageType = List;
     SourceTable = Course;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

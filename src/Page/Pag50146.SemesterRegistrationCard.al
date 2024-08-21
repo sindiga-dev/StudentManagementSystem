@@ -4,6 +4,7 @@ page 50146 SemesterRegistrationCard
     Caption = 'SemesterRegistrationCard';
     PageType = Card;
     SourceTable = SemesterRegistration;
+    UsageCategory = Administration;
     
     layout
     {
@@ -21,10 +22,7 @@ page 50146 SemesterRegistrationCard
                 {
                     ToolTip = 'Specifies the value of the No field.', Comment = '%';
                 }
-                field(NoSeries; Rec.NoSeries)
-                {
-                    ToolTip = 'Specifies the value of the NoSeries field.', Comment = '%';
-                }
+                
                 field(RegistrationDate; Rec.RegistrationDate)
                 {
                     ToolTip = 'Specifies the value of the RegistrationDate field.', Comment = '%';

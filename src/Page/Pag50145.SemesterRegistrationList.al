@@ -4,7 +4,7 @@ page 50145 SemesterRegistrationList
     Caption = 'SemesterRegistrationList';
     PageType = List;
     SourceTable = SemesterRegistration;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

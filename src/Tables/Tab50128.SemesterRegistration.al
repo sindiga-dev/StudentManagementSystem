@@ -8,6 +8,9 @@ table 50128 SemesterRegistration
         field(1; No; Code[20])
         {
             Caption = 'No';
+
+
+            
         }
         field(2; StudentNo; Code[20])
         {
@@ -42,16 +45,31 @@ table 50128 SemesterRegistration
             Caption = 'Status';
             // TableRelation = Status;
         }
-        field(9; NoSeries; Integer )
+        field(9; NoSeries; Code[20] )
         {
             Caption = 'NoSeries';
         }
     }
     keys
     {
-        key(PK; No)
+        key(PK; "No")
         {
             Clustered = true;
         }
     }
+     trigger OnInsert()
+        var
+            StudMgtSetup: Record "StudentManagementSetup";
+            NoseriesMgt: Codeunit "NoSeriesManagement";
+        begin
+            if "No" = '' then begin
+                StudMgtSetup.Get();
+                StudMgtSetup.TestField("SemesterRegNos");
+                NoSeriesMgt.InitSeries(StudMgtSetup."SemesterRegNos", xRec."NoSeries", 0D, "No", "NoSeries");
+    
+            end;
+    
+ 
+    end;
+
 }
