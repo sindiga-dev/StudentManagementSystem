@@ -41,6 +41,10 @@ table 50135 StudentPayment
         {
             Caption = 'Amount';
         }
+        field(9; NoSeries; Code[20] )
+        {
+            Caption = 'NoSeries';
+        }
     }
     keys
     {
@@ -49,4 +53,5 @@ table 50135 StudentPayment
             Clustered = true;
         }
     }
+    
 }

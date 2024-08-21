@@ -44,4 +44,18 @@ table 50133 StudentCharge
             Clustered = true;
         }
     }
+         trigger OnInsert()
+        var
+            StudMgtSetup: Record "StudentManagementSetup";
+            NoseriesMgt: Codeunit "NoSeriesManagement";
+        begin
+            if "No" = '' then begin
+                StudMgtSetup.Get();
+                StudMgtSetup.TestField("StudentPaymentNos");
+                NoSeriesMgt.InitSeries(StudMgtSetup."StudentPaymentNos", xRec."NoSeries", 0D, No, "NoSeries");
+    
+            end;
+    
+ 
+    end;
 }

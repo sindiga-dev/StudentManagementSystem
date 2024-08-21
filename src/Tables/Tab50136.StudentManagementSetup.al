@@ -12,14 +12,18 @@ table 50136 StudentManagementSetup
         field(2; SemesterRegNos; Code[20])
         {
             Caption = 'SemesterRegNos';
+            TableRelation = "No. Series";
         }
         field(3; StudentChargeNos; Code[20])
         {
             Caption = 'StudentChargeNos';
+            TableRelation = "No. Series";
+
         }
         field(4; StudentPaymentNos; Code[20])
         {
             Caption = 'StudentPaymentNos';
+            TableRelation = "No. Series";
         }
     }
     keys
