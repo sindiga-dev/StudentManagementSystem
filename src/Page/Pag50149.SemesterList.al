@@ -4,7 +4,7 @@ page 50149 SemesterList
     Caption = 'SemesterList';
     PageType = List;
     SourceTable = Semester;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

@@ -4,7 +4,7 @@ page 50148 CalenderYearList
     Caption = 'CalenderYearList';
     PageType = List;
     SourceTable = CalenderYear;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

@@ -4,7 +4,7 @@ page 50153 StudentUnitList
     Caption = 'StudentUnitList';
     PageType = List;
     SourceTable = StudentUnit;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

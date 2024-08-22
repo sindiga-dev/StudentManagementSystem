@@ -51,8 +51,8 @@ table 50133 StudentCharge
         begin
             if "No" = '' then begin
                 StudMgtSetup.Get();
-                StudMgtSetup.TestField("StudentPaymentNos");
-                NoSeriesMgt.InitSeries(StudMgtSetup."StudentPaymentNos", xRec."NoSeries", 0D, No, "NoSeries");
+                StudMgtSetup.TestField("StudentChargeNos");
+                NoSeriesMgt.InitSeries(StudMgtSetup."StudentChargeNos", xRec."NoSeries", 0D, No, "NoSeries");
     
             end;
     

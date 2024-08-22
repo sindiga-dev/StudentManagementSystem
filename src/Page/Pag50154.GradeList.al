@@ -4,7 +4,7 @@ page 50154 GradeList
     Caption = 'GradeList';
     PageType = List;
     SourceTable = Grade;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

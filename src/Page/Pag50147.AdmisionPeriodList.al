@@ -4,7 +4,7 @@ page 50147 AdmisionPeriodList
     Caption = 'AdmisionPeriodList';
     PageType = List;
     SourceTable = AdmissionPeriod;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

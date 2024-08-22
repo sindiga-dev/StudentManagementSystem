@@ -4,7 +4,7 @@ page 50152 YearSemesterList
     Caption = 'YearSemesterList';
     PageType = List;
     SourceTable = YearSemester;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

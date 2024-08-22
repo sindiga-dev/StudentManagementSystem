@@ -4,7 +4,7 @@ page 50157 StudentChargeLineList
     Caption = 'StudentChargeLineList';
     PageType = List;
     SourceTable = StudentCharge;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

@@ -4,6 +4,7 @@ page 50144 StudentCard
     Caption = 'StudentCard';
     PageType = Card;
     SourceTable = Customer;
+    UsageCategory = Administration;
     
     layout
     {

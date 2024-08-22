@@ -4,7 +4,7 @@ page 50151 UnitList
     Caption = 'UnitList';
     PageType = List;
     SourceTable = Unit;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     
     layout
     {

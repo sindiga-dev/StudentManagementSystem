@@ -4,6 +4,7 @@ page 50150 CourseYearList
     Caption = 'CourseYearList';
     PageType = Card;
     SourceTable = CourseYear;
+    UsageCategory = Administration;
 
     layout
     {
