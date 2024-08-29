@@ -31,4 +31,23 @@ table 50159 AcademicYear
             Clustered = true;
         }
     }
+
+    procedure SetCurrent()
+    var
+        AcademicYear: Record "AcademicYear";
+        Text000: Label 'AcademicYear %1 not found.';
+    begin
+        AcademicYear.Reset();
+        AcademicYear.SetRange("Current", true);
+        AcademicYear.SetFilter(Code, '<>%1', Code);
+
+        if AcademicYear.FindFirst() then
+        begin
+            AcademicYear.Current := false;
+            AcademicYear.Closed := true;
+            AcademicYear.Modify();
+        end;
+        Closed := false;
+        Current := true;
+    end;
 }
