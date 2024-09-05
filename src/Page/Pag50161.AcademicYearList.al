@@ -23,10 +23,12 @@ page 50161 AcademicYearList
                 field(Current; Rec.Current)
                 {
                     ToolTip = 'Specifies the value of the Current field.', Comment = '%';
+                    Editable = false;
                 }
                 field(Closed; Rec.Closed)
                 {
                     ToolTip = 'Specifies the value of the Closed field.', Comment = '%';
+                    Editable = false;
                 }
             }
         }

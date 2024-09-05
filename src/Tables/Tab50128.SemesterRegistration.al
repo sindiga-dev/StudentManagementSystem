@@ -49,6 +49,38 @@ table 50128 SemesterRegistration
         {
             Caption = 'NoSeries';
         }
+        field(10; Posted; Boolean)
+        {
+            Caption = 'Posted';
+        }
+        field(11;PostedBy; Code[20])
+        {
+            Caption = 'PostedBy';
+        }
+    
+        field(12; AcademicYear; Code[20])
+        {
+            Caption = 'AcademicYear';
+            TableRelation = AcademicYear;
+        }
+
+        field(13; Period ; Code[20])
+        {
+            Caption = 'Period';
+            TableRelation = AdmissionPeriod;
+        }
+        field(14; DatePosted; Date)
+        {
+            Caption = 'DatePosted';
+        }
+        field(15; Current; Boolean)
+        {
+            Caption = 'Current';
+        }
+        field(16; Closed; Boolean)
+        {
+            Caption = 'Closed';
+        }
     }
     keys
     {
@@ -71,5 +103,25 @@ table 50128 SemesterRegistration
     
  
     end;
+
+    // Implement a procedure to get the current admission period in the semester registration where the period will automatically pick the current one.
+    procedure GetCurrentAdmissionPeriod(var AdmissionPeriod: Record "AdmissionPeriod")
+    begin
+        AdmissionPeriod.Reset();
+        AdmissionPeriod.SetRange("Current", true);
+        AdmissionPeriod.SetFilter("code", '<>%1', No);
+
+        if AdmissionPeriod.FindFirst() then
+        begin
+            AdmissionPeriod.Current := false;
+            AdmissionPeriod.Closed := true;
+            AdmissionPeriod.Modify();
+        end;
+        Closed := false;
+        Current := true;
+    end;
+
+
+    
 
 }

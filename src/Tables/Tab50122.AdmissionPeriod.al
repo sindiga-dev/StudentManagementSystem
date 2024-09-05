@@ -30,6 +30,14 @@ table 50122 AdmissionPeriod
             Caption = 'AcademicYear';
             TableRelation = "CalenderYear";
         }
+        field(7; "Current"; Boolean)
+        {
+            Caption = 'Current';
+        }
+        field(8; Closed; Boolean)
+        {
+            Caption = 'Closed';
+        }
     }
     keys
     {
@@ -38,4 +46,24 @@ table 50122 AdmissionPeriod
             Clustered = true;
         }
     }
+
+    procedure SetNew()
+    var
+        AdmissionPeriod: Record "AdmissionPeriod";
+        // Text000: Label 'AdmissionPeriod %1 not found.';
+    begin
+        AdmissionPeriod.Reset();
+        AdmissionPeriod.SetRange("Current", true);
+        AdmissionPeriod.SetFilter(code, '<>%1', code);
+
+        if AdmissionPeriod.FindFirst() then
+        begin
+            AdmissionPeriod.Current := false;
+            AdmissionPeriod.Closed := true;
+            AdmissionPeriod.Modify();
+        end;
+        Closed := false;
+        Current := true;
+    end;
 }
+

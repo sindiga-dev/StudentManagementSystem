@@ -1,7 +1,7 @@
 page 50145 SemesterRegistrationList
 {
     ApplicationArea = All;
-    Caption = 'SemesterRegistrationList';
+    Caption = 'SemesterRegistrationCard';
     PageType = List;
     SourceTable = SemesterRegistration;
     UsageCategory = Lists;

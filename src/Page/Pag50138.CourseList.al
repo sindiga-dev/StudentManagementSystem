@@ -28,6 +28,7 @@ page 50137 CourseList
                 {
                     ToolTip = 'Specifies the value of the NoOfYears field.', Comment = '%';
                 }
+                
             }
         }
     }
