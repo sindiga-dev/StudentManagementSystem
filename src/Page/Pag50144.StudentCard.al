@@ -14,6 +14,11 @@ page 50144 StudentCard
             {
                 Caption = 'General';
                 
+                field("No."; Rec."No.")
+                {
+                    ToolTip = 'Specifies the value of the No. field.', Comment = '%';
+                    Editable = false;
+                }
                 field(FirstName; Rec.FirstName)
                 {
                     ToolTip = 'Specifies the value of the FirstName field.', Comment = '%';
@@ -29,6 +34,7 @@ page 50144 StudentCard
                 field(FullName; Rec.FullName)
                 {
                     ToolTip = 'Specifies the value of the FullName field.', Comment = '%';
+                    Editable = false;
                 }
                 field(Birthdate; Rec.Birthdate)
                 {
@@ -69,6 +75,14 @@ page 50144 StudentCard
                 field(MobileNo; Rec.MobileNo)
                 {
                     ToolTip = 'Specifies the value of the MobileNo field.', Comment = '%';
+                    //validate the mobile number
+                    trigger OnValidate()
+                    begin
+                        if (STRLEN(Rec.MobileNo) <> 10) then
+                        begin
+                            ERROR('Mobile number must be 10 characters long');
+                        end;
+                    end;
                 }
             }
         }

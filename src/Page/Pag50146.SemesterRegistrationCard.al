@@ -2,101 +2,74 @@ page 50146 SemesterRegistration
 {
     ApplicationArea = All;
     Caption = 'SemesterRegistrationCard';
-    PageType = List;
+    PageType = Card;
     SourceTable = SemesterRegistration;
-    UsageCategory = Lists;
-    
+    UsageCategory = Administration;
+
     layout
     {
         area(Content)
         {
-            group(General)  
+            group(General)
             {
                 Caption = 'General';
                 field(No; Rec.No)
                 {
-                    ToolTip = 'Specifies the value of the No field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the No field.';
                 }
                 field(StudentNo; Rec.StudentNo)
                 {
-                    ToolTip = 'Specifies the value of the StudentNo field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the StudentNo field.';
                 }
                 field(StudentName; Rec.StudentName)
                 {
-                    ToolTip = 'Specifies the value of the StudentName field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the StudentName field.';
                 }
                 field(Course; Rec.Course)
                 {
-                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Course field.';
                 }
-                field(year;Rec.year)
+                field(year; Rec.year)
                 {
-                    ToolTip = 'Specifies the value of the year field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the year field.';
                 }
                 field(Semester; Rec.Semester)
                 {
-                    ToolTip = 'Specifies the value of the Semester field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Semester field.';
                 }
                 field(RegistrationDate; Rec.RegistrationDate)
                 {
-                    ToolTip = 'Specifies the value of the RegistrationDate field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the RegistrationDate field.';
+                }
+                                field(Period; Rec.AdmissionPeriod)
+                {
+                    ToolTip = 'Specifies the value of the Period field.';
                 }
                 field(Status; Rec.Status)
                 {
-                    ToolTip = 'Specifies the value of the Status field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Status field.';
                 }
-                field(NoSeries;Rec.NoSeries)
+         
+                field(Posted; Rec.Posted)
                 {
-                    ToolTip = 'Specifies the value of the NoSeries field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Posted field.';
                 }
-                field(Posted;Rec.Posted)
+                field(PostedBy; Rec.PostedBy)
                 {
-                    ToolTip = 'Specifies the value of the Posted field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the PostedBy field.';
                 }
-                field(PostedBy;Rec.PostedBy)
+                field(DatePosted; Rec.DatePosted)
                 {
-                    ToolTip = 'Specifies the value of the PostedBy field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the DatePosted field.';
                 }
-                field(DatePosted;Rec.DatePosted)
+                field(AcademicYear; Rec.AcademicYear)
                 {
-                    ToolTip = 'Specifies the value of the DatePosted field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the AcademicYear field.';
                 }
-                field(AcademicYear;Rec.AcademicYear)
-                {
-                    ToolTip = 'Specifies the value of the AcademicYear field.', Comment = '%';
-                }
-                field(Period;Rec.Period)
-                {
-                    ToolTip = 'Specifies the value of the Period field.', Comment = '%';
-                }
-                field(Current;Rec.Current)
-                {
-                    ToolTip = 'Specifies the value of the Current field.', Comment = '%';
-                }
-                field(Closed;Rec.Closed)
-                {
-                    ToolTip = 'Specifies the value of the Closed field.', Comment = '%';
-                }
-                
-            }
-        }
-    }
-    // I already implemented a procedure to to get the current admission period in the semester registration where the 
-    // period will automatically pick the current one.
-    // write the action
-    actions
-    {
-        area(Processing)
-        {
-            action(Post)
-            {
-                ApplicationArea = All;
-                Caption = 'GetCurrentAdmissionPeriod';
-                Promoted = true;
-                PromotedCategory = Process;
-                Image =  Check;
 
             }
         }
     }
+
+    
 }

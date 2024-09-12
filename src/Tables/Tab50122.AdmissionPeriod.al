@@ -65,5 +65,22 @@ table 50122 AdmissionPeriod
         Closed := false;
         Current := true;
     end;
+
+    procedure GetCurrentAdmissionPeriod(var Year: Code[20]): Code[20]
+    var
+        AdmissionPeriod: Record "AdmissionPeriod";
+    begin
+        AdmissionPeriod.Reset();
+        AdmissionPeriod.SetRange("Current", true);
+        if AdmissionPeriod.FindFirst() then begin
+            Exit(AdmissionPeriod.code);
+        end;
+    end;
+
+
+
+    
+
+    
 }
 

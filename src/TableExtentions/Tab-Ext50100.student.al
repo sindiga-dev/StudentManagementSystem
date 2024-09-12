@@ -26,16 +26,20 @@ tableextension 50106 student extends Customer
         {
             Caption = 'Surname';
             DataClassification = ToBeClassified;
+
             trigger OnValidate()
-            begin
-                // Name:=FirstName + OtherName "" + Surname 
-                UpdateFullName();
-            end;
+                begin
+                    "FullName":="FirstName" +''+ "OtherName" + '' + "Surname" 
+                
+                end;
+      
         }
         field(50109; FullName; Text[100]) // Adjusted length to accommodate the full name
         {
             Caption = 'FullName';
             DataClassification = ToBeClassified;
+        
+
         }
         field(50110; Birthdate; Date)
         {
@@ -54,12 +58,12 @@ tableextension 50106 student extends Customer
             DataClassification = ToBeClassified;
             TableRelation = "AdmissionPeriod";
         }
-        field(50113; CustomerType; Enum "ABS Blob Access Tier")
+        field(50113; CustomerType; Enum "StudentTableEnum")
         {
             Caption = 'CustomerType';
             DataClassification = ToBeClassified;
         }
-        field(50114; Gender; Enum "ABS Blob Access Tier")
+        field(50114; Gender; Enum "GenderEnum")
         {
             Caption = 'Gender';
             DataClassification = ToBeClassified;

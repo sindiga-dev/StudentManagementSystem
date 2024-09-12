@@ -50,4 +50,15 @@ table 50159 AcademicYear
         Closed := false;
         Current := true;
     end;
+
+    procedure GetCurrent(): Record "AcademicYear"
+    var
+        AcademicYear: Record "AcademicYear";
+    begin
+        AcademicYear.Reset();
+        AcademicYear.SetRange("Current", true);
+        if AcademicYear.FindFirst() then
+            exit(AcademicYear);
+        exit(AcademicYear);
+    end;
 }
