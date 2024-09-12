@@ -64,9 +64,10 @@ table 50128 SemesterRegistration
         {
             Caption = 'RegistrationDate';
         }
-        field(8; Status; Enum "ABS Blob Access Tier")
+        field(8; Status; Enum "StatusEnum")
         {
             Caption = 'Status';
+            
         }
         field(9; NoSeries; Code[20])
         {

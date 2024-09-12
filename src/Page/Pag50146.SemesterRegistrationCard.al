@@ -24,6 +24,7 @@ page 50146 SemesterRegistration
                 field(StudentName; Rec.StudentName)
                 {
                     ToolTip = 'Specifies the value of the StudentName field.';
+                    Editable = false;
                 }
                 field(Course; Rec.Course)
                 {
@@ -41,9 +42,10 @@ page 50146 SemesterRegistration
                 {
                     ToolTip = 'Specifies the value of the RegistrationDate field.';
                 }
-                                field(Period; Rec.AdmissionPeriod)
+                field(Period; Rec.AdmissionPeriod)
                 {
                     ToolTip = 'Specifies the value of the Period field.';
+                    Editable = false;
                 }
                 field(Status; Rec.Status)
                 {
@@ -65,6 +67,7 @@ page 50146 SemesterRegistration
                 field(AcademicYear; Rec.AcademicYear)
                 {
                     ToolTip = 'Specifies the value of the AcademicYear field.';
+                    Editable = false;
                 }
 
             }
