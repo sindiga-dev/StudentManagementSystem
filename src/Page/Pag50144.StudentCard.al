@@ -75,15 +75,18 @@ page 50144 StudentCard
                 field(MobileNo; Rec.MobileNo)
                 {
                     ToolTip = 'Specifies the value of the MobileNo field.', Comment = '%';
-                    //validate the mobile number
+                    //validate the mobile number make sure it is 10 to 15 digits long and contains symbols and numbers only
                     trigger OnValidate()
+
                     begin
-                        if (STRLEN(Rec.MobileNo) <> 10) then
-                        begin
-                            ERROR('Mobile number must be 10 characters long');
-                            
-                        end;
+                        if (STRLEN(Rec.MobileNo) < 10) then
+                            ERROR('Mobile number must be at least 10 digits long');
+                        if (STRLEN(Rec.MobileNo) > 15) then
+                            ERROR('Mobile number must be at most 15 digits long');
                     end;
+
+                    
+         
                 }
             }
         }

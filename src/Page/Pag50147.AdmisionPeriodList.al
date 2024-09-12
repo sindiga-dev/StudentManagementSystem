@@ -16,27 +16,24 @@ page 50147 AdmisionPeriodList
                 {
                     ToolTip = 'Specifies the value of the Code field.', Comment = '%';
                 }
-                field(AcademicYear; Rec.AcademicYear)
-                {
-                    ToolTip = 'Specifies the value of the AcademicYear field.', Comment = '%';
-                }
-                field(Description; Rec.Description)
+                field(Description;Rec.Description)
                 {
                     ToolTip = 'Specifies the value of the Description field.', Comment = '%';
                 }
-                field(ApplicationDeadline; Rec.ApplicationDeadline)
+                field(ApplicationDeadline;Rec.ApplicationDeadline)
                 {
                     ToolTip = 'Specifies the value of the ApplicationDeadline field.', Comment = '%';
                 }
-                field(StartDate; Rec.StartDate)
+                field(StartDate;Rec.StartDate)
                 {
                     ToolTip = 'Specifies the value of the StartDate field.', Comment = '%';
                 }
-
-                field(EndDate; Rec.EndDate)
+                field(EndDate;Rec.EndDate)
                 {
                     ToolTip = 'Specifies the value of the EndDate field.', Comment = '%';
                 }
+
+
             
                   field(Current; Rec.Current)
                 {
