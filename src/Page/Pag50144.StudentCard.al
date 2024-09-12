@@ -81,6 +81,7 @@ page 50144 StudentCard
                         if (STRLEN(Rec.MobileNo) <> 10) then
                         begin
                             ERROR('Mobile number must be 10 characters long');
+                            
                         end;
                     end;
                 }

@@ -17,18 +17,27 @@ page 50142 CourseUnitCard
                 {
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field(Description; Rec.Description)
+                field(year;Rec.year)
                 {
-                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the year field.', Comment = '%';
                 }
-                field(NoOfHours; Rec.NoOfHours)
-                {
-                    ToolTip = 'Specifies the value of the NoOfHours field.', Comment = '%';
-                }
-                field(Semester; Rec.Semester)
+                field(Semester;Rec.Semester)
                 {
                     ToolTip = 'Specifies the value of the Semester field.', Comment = '%';
                 }
+                field(Unit;Rec.Unit)
+                {
+                    ToolTip = 'Specifies the value of the Unit field.', Comment = '%';
+                }
+                field(Description;Rec.Description)
+                {
+                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
+                }
+                field(NoOfHours;Rec.NoOfHours)
+                {
+                    ToolTip = 'Specifies the value of the NoOfHours field.', Comment = '%';
+                }
+
             }
         }
     }
