@@ -3,7 +3,7 @@ page 50157 StudentChargeLineList
     ApplicationArea = All;
     Caption = 'StudentChargeLineList';
     PageType = List;
-    SourceTable = StudentCharge;
+    SourceTable = StudentChargeLine;
     UsageCategory = Lists;
     
     layout
@@ -12,30 +12,27 @@ page 50157 StudentChargeLineList
         {
             repeater(General)
             {
-                field(Course; Rec.Course)
+                field(DocumentNo;Rec.DocumentNo)
                 {
-                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the DocumentNo field.', Comment = '%';
                 }
-                field(DocumentDate; Rec.DocumentDate)
+                field(StudentNo;Rec.StudentNo)
                 {
-                    ToolTip = 'Specifies the value of the DocumentDate field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the StudentNo field.', Comment = '%';
                 }
-                field(No; Rec.No)
+                field(ActivityCode;Rec.ActivityCode)
                 {
-                    ToolTip = 'Specifies the value of the No field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the ActivityCode field.', Comment = '%';
                 }
-                field(NoSeries; Rec.NoSeries)
+                field(Description;Rec.Description)
                 {
-                    ToolTip = 'Specifies the value of the NoSeries field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
                 }
-                field(Semester; Rec.Semester)
+                field("Amount ";Rec."Amount ")
                 {
-                    ToolTip = 'Specifies the value of the Semester field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Amount  field.', Comment = '%';
                 }
-                field(Status; Rec.Status)
-                {
-                    ToolTip = 'Specifies the value of the Status field.', Comment = '%';
-                }
+
             }
         }
     }

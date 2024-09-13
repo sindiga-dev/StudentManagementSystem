@@ -12,30 +12,31 @@ page 50156 StudentChargeList
         {
             repeater(General)
             {
-                field(Course; Rec.Course)
-                {
-                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
-                }
-                field(DocumentDate; Rec.DocumentDate)
-                {
-                    ToolTip = 'Specifies the value of the DocumentDate field.', Comment = '%';
-                }
-                field(No; Rec.No)
+                field(No;Rec.No)
                 {
                     ToolTip = 'Specifies the value of the No field.', Comment = '%';
                 }
-                field(NoSeries; Rec.NoSeries)
+                field(Course;Rec.Course)
                 {
-                    ToolTip = 'Specifies the value of the NoSeries field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field(Semester; Rec.Semester)
+                field(Year;Rec.Year)
+                {
+                    ToolTip = 'Specifies the value of the Year field.', Comment = '%';
+                }
+                field(Semester;Rec.Semester)
                 {
                     ToolTip = 'Specifies the value of the Semester field.', Comment = '%';
                 }
-                field(Status; Rec.Status)
+                field(DocumentDate;Rec.DocumentDate)
+                {
+                    ToolTip = 'Specifies the value of the DocumentDate field.', Comment = '%';
+                }
+                field(Status;Rec.Status)
                 {
                     ToolTip = 'Specifies the value of the Status field.', Comment = '%';
                 }
+                
             }
         }
     }

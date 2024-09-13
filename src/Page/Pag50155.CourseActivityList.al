@@ -12,26 +12,31 @@ page 50155 CourseActivityList
         {
             repeater(General)
             {
-                field(Activity; Rec.Activity)
-                {
-                    ToolTip = 'Specifies the value of the Activity field.', Comment = '%';
-                }
-                field(Amount; Rec.Amount)
-                {
-                    ToolTip = 'Specifies the value of the Amount field.', Comment = '%';
-                }
-                field(Course; Rec.Course)
+                field(Course;Rec.Course)
                 {
                     ToolTip = 'Specifies the value of the Course field.', Comment = '%';
                 }
-                field(Description; Rec.Description)
+                field(Year;Rec.Year)
                 {
-                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Year field.', Comment = '%';
                 }
-                field(Semester; Rec.Semester)
+                field(Semester;Rec.Semester)            
                 {
                     ToolTip = 'Specifies the value of the Semester field.', Comment = '%';
                 }
+                field(Activity;Rec.Activity)
+                {
+                    ToolTip = 'Specifies the value of the Activity field.', Comment = '%';
+                }
+                field(Description;Rec.Description)
+                {
+                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
+                }
+                field(Amount;Rec.Amount)        
+                {
+                    ToolTip = 'Specifies the value of the Amount field.', Comment = '%';
+                }
+
             }
         }
     }

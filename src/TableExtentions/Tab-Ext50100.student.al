@@ -29,7 +29,7 @@ tableextension 50106 student extends Customer
 
             trigger OnValidate()
                 begin
-                    "FullName":="FirstName" +''+ "OtherName" + '' + "Surname" 
+                    "FullName":="FirstName" +' '+ "OtherName" + ' ' + "Surname" 
                 
                 end;
       
