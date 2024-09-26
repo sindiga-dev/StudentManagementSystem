@@ -26,7 +26,7 @@ table 50128 SemesterRegistration
                      // Retrieve the current academic year using the GetCurrent() method
                     AcademicYears := AcademicYears.GetCurrent();
                     if AcademicYears.Code <> '' then begin
-                        "AcademicYear" := AcademicYears.Code; // Set the current academic year
+                        "AcademicYear" := AcademicYears.Code; 
                     end else begin
                         Error('No current academic year found.');
                     end;

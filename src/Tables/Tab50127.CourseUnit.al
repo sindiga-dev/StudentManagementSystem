@@ -24,6 +24,14 @@ table 50127 CourseUnit
         {
             Caption = 'Unit';
             TableRelation = Unit;
+
+            trigger OnValidate()
+            var
+                DescriptionRec: Record "Unit";  
+            begin
+                if DescriptionRec.Get(Unit) then
+                    Description := DescriptionRec.Description;
+            end;
         }
         field(5; Description; Text[20])
         {
