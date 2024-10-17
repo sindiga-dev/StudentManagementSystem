@@ -2,7 +2,7 @@ page 50166 SemesterRegistrationLineList
 {
     ApplicationArea = All;
     Caption = 'SemesterRegistrationLineList';
-    PageType = List;
+    PageType = ListPart;
     SourceTable = SemesterRegistrationLine;
     
     layout
@@ -11,14 +11,7 @@ page 50166 SemesterRegistrationLineList
         {
             repeater(General)
             {
-                field(DocumentNo; Rec.DocumentNo)
-                {
-                    ToolTip = 'Specifies the value of the DocumentNo field.', Comment = '%';
-                }
-                field(LineNumber; Rec.LineNumber)
-                {
-                    ToolTip = 'Specifies the value of the LineNumber field.', Comment = '%';
-                }
+ 
                 field(Unit; Rec.Unit)
                 {
                     ToolTip = 'Specifies the value of the Unit field.', Comment = '%';

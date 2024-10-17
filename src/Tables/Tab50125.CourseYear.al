@@ -14,6 +14,16 @@ table 50125 CourseYear
         {
             Caption = 'Year';
             TableRelation = "CalenderYear";
+
+            trigger OnValidate()
+            var
+                Year: Record "CalenderYear";
+            begin
+                begin
+                    if not Year.Get(Year) then
+                        Error('Year does not exist');
+                end;
+            end;
             
         }
         field(3; Semester; Code[20])

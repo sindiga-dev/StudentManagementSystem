@@ -33,6 +33,13 @@ table 50128 SemesterRegistration
                      
                      "AdmissionPeriod" := Period.GetCurrentAdmissionPeriod("AcademicYear");
 
+                     //get courseyear and semester
+                    year := Course.GetCourseYear("AcademicYear");
+                    Semester := Course.GetCourseSemester("AcademicYear");
+                    
+
+                    
+
                      end
                       
                 end;

@@ -100,4 +100,15 @@ tableextension 50106 student extends Customer
     begin
         FullName := FirstName + ' ' + OtherName;
     end;
+
+    //implement a procedure to get current year and semester.
+
+    procedure GetCurrentYearAndSemester(var Year: Integer; var Semester: Integer)
+
+    begin
+        Year := 2021;
+        Semester := 1;
+    end;
+
+    
 }

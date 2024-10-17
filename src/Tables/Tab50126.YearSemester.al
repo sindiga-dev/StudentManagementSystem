@@ -27,4 +27,16 @@ table 50126 YearSemester
             Clustered = true;
         }
     }
+
+    //implement a procedure to get current year and semester.
+
+    procedure GetCurrentYearSemester(): Text[50]
+    var
+        CurrentYearSemester: Record "YearSemester";
+    begin
+        if CurrentYearSemester.Get(CurrentYearSemester.Year, CurrentYearSemester.Semester) then
+            exit(CurrentYearSemester.Description)
+        else
+            exit('Year Semester not set');
+    end;
 }
