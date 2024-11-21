@@ -6,10 +6,7 @@ enum 50165 StatusEnum
     {
         Caption = 'Pending';
     }
-    value(1; Submitted)
-    {
-        Caption = 'Submitted';
-    }
+ 
     value(2; Approved)
     {
         Caption = 'Approved';
@@ -22,8 +19,11 @@ enum 50165 StatusEnum
     {
         Caption = 'Cancelled';
     }
-    value(5; Completed)
+
+    value(6; open)
     {
-        Caption = 'Completed';
+        Caption = 'open';
     }
 }
+
+
