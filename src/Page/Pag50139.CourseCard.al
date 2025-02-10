@@ -16,7 +16,7 @@ page 50139 CourseCard
                 
                 field("Code"; Rec."Code")
                 {
-                    ToolTip = 'Specifies the value of the Code field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Codacdcfede field.', Comment = '%';
                 }
                 field(Description; Rec.Description)
                 {
